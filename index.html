@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://p7.hiclipart.com/preview/437/167/706/emoji-brain-emoticon-apple-color-emoji-agy-emoji.jpg" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js"></script>
+    <title>Epic Trivia Challenge</title>
+</head>
+<body>
+    <div class="app-container">
+    <h1><span class="highlight-text"></span> Epic Trivia Challenge</h1>
+    
+    <div id="quiz-content">
+        <div id="question-area" class="question-area">
+            <p id="question-text"></p>
+        </div>
+
+        <div id="answer-buttons" class="answer-buttons">
+            </div>
+
+        <div class="controls-footer">
+            <p id="progress-text">Round 1 of 15</p>
+            
+            <button id="next-btn" ondblclick="handleNextQuestion()" class="main-btn" disabled>Next Round</button>
+        </div>
+    </div>
+
+    <div id="result-area" class="result-area hidden">
+        <h2>Challenge Over! </h2>
+        <p id="final-score">You scored 0/15</p>
+        <button id="restart-btn" class="main-btn">Try Again</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="app.js"></script>
+</body>
+</html>
